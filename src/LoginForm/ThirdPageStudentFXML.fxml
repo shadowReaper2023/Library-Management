@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginForm.ThirdPageStudentFXMLController">
+   <right>
+      <AnchorPane prefHeight="293.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="300.0" fitWidth="300.0" opacity="0.84" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/LibraryImageSecond.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="29.0" layoutY="37.0" prefHeight="59.0" prefWidth="270.0" style="-fx-font-weight: bold;" text="Login Student Account" textFill="#000000d0">
+               <font>
+                  <Font name="Monospaced Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="95.0" style="-fx-font-weight: bold;" text="Username">
+               <font>
+                  <Font name="Cambria" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="134.0" style="-fx-font-weight: bold;" text="Passwod">
+               <font>
+                  <Font name="Monospaced Regular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="studentLoginButton" layoutX="61.0" layoutY="196.0" mnemonicParsing="false" onAction="#loginStudent" prefHeight="30.0" prefWidth="95.0" style="-fx-background-radius: 10px;" text="Login">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/studentIconLogin.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="180.0" layoutY="197.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="95.0" style="-fx-background-radius: 10px;" text="Cancel">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/cancel.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <CheckBox layoutX="110.0" layoutY="162.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="153.0" text="Remember me">
+               <font>
+                  <Font name="Monospaced Bold" size="12.0" />
+               </font>
+            </CheckBox>
+            <Hyperlink layoutX="56.0" layoutY="247.0" style="-fx-font-weight: bold;" text="Forgot Password" textFill="#0c3370" />
+            <Hyperlink layoutX="188.0" layoutY="247.0" prefHeight="23.0" prefWidth="107.0" style="-fx-font-weight: bold;" text="Create Account" textFill="#0c3370" />
+            <Label layoutX="163.0" layoutY="250.0" style="-fx-font-weight: bold;" text="Or" />
+            <TextField fx:id="studentUsername" layoutX="110.0" layoutY="92.0" style="-fx-background-color: transparent; -fx-border-color: black;">
+               <font>
+                  <Font name="Constantia Bold Italic" size="12.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="studentPassword" layoutX="110.0" layoutY="131.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-font-weight: bold;">
+               <font>
+                  <Font name="Constantia Bold Italic" size="12.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane opacity="0.95" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #0c3370;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="155.0" fitWidth="160.0" layoutX="73.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
